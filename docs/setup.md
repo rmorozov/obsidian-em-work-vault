@@ -8,3 +8,7 @@
 6. Work from a copy when mapping internal content; review confidentiality before transferring even a sanitized note into this public repository. The Obsidian CLI can help inspect live plugin commands and open notes on your workstation; this GitHub-based scaffold cannot access your local running app.
 
 Source templates: [Daily](https://github.com/quanru/obsidian-example-lifeos/blob/main/0.%20PeriodicNotes/Templates/Daily.md), [Weekly](https://github.com/quanru/obsidian-example-lifeos/blob/main/0.%20PeriodicNotes/Templates/Weekly.md).
+
+## Local upstream reference
+
+Run `bash scripts/fetch_lifeos_example.sh` to clone the upstream English example vault at a pinned commit into `.reference/lifeos-example/`. That directory is ignored by Git. Compare its `0. PeriodicNotes/Templates/`, `1. Projects/`, `2. Areas/`, `3. Resources/`, and tracked `.obsidian/` files with your local installation. The upstream checkout is detached; use an explicit local branch if you want to experiment inside it. This does not merge or publish upstream files into our public repository.
