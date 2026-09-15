@@ -1,4 +1,6 @@
-# <% tp.date.now("YYYY-MM-DD dddd") %>
+## Project List
+
+<% LifeOS.Project.snapshot() %>
 
 ## Attention
 
