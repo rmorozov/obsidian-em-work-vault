@@ -227,3 +227,9 @@ __marimo__/
 
 # Pinned upstream example checkout for local comparison
 .reference/
+
+# LifeOS nested generated notes; synthetic originals live only under demo/fixtures
+/0. PeriodicNotes/[0-9][0-9][0-9][0-9]/
+/4. Management/Decisions/*.md
+/4. Management/Risks/*.md
+/4. Management/Systemic Problems/*.md
