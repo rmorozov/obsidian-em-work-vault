@@ -10,7 +10,9 @@
 
 ## Daily signals
 
-<!-- Paste output of scripts/weekly_signals.py, or replace with verified LifeOS aggregation syntax. -->
+```LifeOS
+BulletRecordListByTime
+```
 
 ## Decisions
 
