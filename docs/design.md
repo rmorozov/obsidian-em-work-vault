@@ -14,8 +14,10 @@ Human triage happens before capture. Put safe or deliberately sanitized summarie
 - Management objects record rationale, evidence, intervention triggers and review dates. ADO remains the execution tracker; link to items rather than copying their status.
 - AI may suggest attention, patterns and omissions after human triage. The manager edits and owns the final weekly review and decisions.
 
-## Validate locally before migrating
+## Reuse from the example vault
 
-The previous chat suggested LifeOS `BulletRecordListByTime` aggregation, but its exact template block syntax, the installed template paths, plugin settings, and date formats must be verified against the local installation. Do not paste a placeholder code fence into a production weekly template. The included independent helper offers a deterministic fallback during experiments.
+The source vault's `0. PeriodicNotes/Templates/Daily.md` has `## Daily Record` and a project snapshot. Its Weekly template uses the verified `LifeOS` code block `BulletRecordListByTime` under “Collected this week.” We retain the capture heading, optional project snapshot and bullet aggregation while simplifying the role, habit, time accounting and task views. The sample Project template provides tag-based task, bullet and file queries; we can selectively add those later if a concrete management question requires them.
 
-The folder names in this repository are an experiment. Prefer mapping a copy of the real vault before moving any notes. Never overwrite existing LifeOS-created files during migration.
+LifeOS implements `BulletRecordListByTime` using Dataview: it gathers non-task list items from daily files in the period and filters by the configured Daily Record heading. The view is rendered dynamically in Obsidian. It is the native collection mechanism; no independent Python collector is needed for v1.
+
+Inspect the locally installed LifeOS settings and date formats before migrating data or replacing a local template. Never overwrite existing LifeOS-created files during migration.
