@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local Obsidian state and actual work notes are outside this public experiment
+.obsidian/
+.trash/
+.DS_Store
+0. PeriodicNotes/Daily/
+0. PeriodicNotes/Weekly/
+5. People/
+
+# Pinned upstream example checkout for local comparison
+.reference/
