@@ -224,3 +224,6 @@ __marimo__/
 0. PeriodicNotes/Daily/
 0. PeriodicNotes/Weekly/
 5. People/
+
+# Pinned upstream example checkout for local comparison
+.reference/
