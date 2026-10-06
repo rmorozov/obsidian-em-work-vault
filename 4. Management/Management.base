@@ -1,0 +1,69 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - 'file.inFolder("4. Management")'
+    - or:
+        - 'type == "decision"'
+        - 'type == "risk"'
+        - 'type == "systemic-problem"'
+    - 'status != "closed" && status != "resolved"'
+formulas:
+  next_checkpoint: 'if(review_on, review_on, needed_by)'
+properties:
+  note.type:
+    displayName: Type
+  note.status:
+    displayName: Status
+  note.attention:
+    displayName: Attention
+  note.review_on:
+    displayName: Review on
+  note.needed_by:
+    displayName: Needed by
+  formula.next_checkpoint:
+    displayName: Next checkpoint
+views:
+  - type: kanban
+    name: Attention
+    groupBy:
+      property: note.attention
+      direction: ASC
+    groupOrder:
+      - Now
+      - This week
+      - Watch
+      - null
+    order:
+      - file.name
+      - note.type
+      - note.status
+      - note.review_on
+      - note.needed_by
+  - type: table
+    name: Attention needs correction
+    filters:
+      and:
+        - 'attention != "Now" && attention != "This week" && attention != "Watch"'
+    order:
+      - file.name
+      - note.attention
+      - note.type
+      - note.status
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Review dates
+    order:
+      - file.name
+      - note.type
+      - note.attention
+      - note.status
+      - note.review_on
+      - note.needed_by
+      - formula.next_checkpoint
+    sort:
+      - property: formula.next_checkpoint
+        direction: ASC
+      - property: file.name
+        direction: ASC

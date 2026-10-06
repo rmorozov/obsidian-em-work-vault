@@ -4,6 +4,22 @@ Open today's LifeOS daily note and capture safe observations under **Daily Recor
 
 ## Attention
 
+Obsidian 1.14+: enable the core Bases plugin to review promoted notes below. Move a card to change its **attention**, then open the note to review its rationale and lifecycle status.
+
+![[4. Management/Management.base#Attention]]
+
+### Attention needs correction
+
+Missing or mistyped attention values appear here. Set each row to **Now**, **This week**, or **Watch**. Unsupported values are hidden from the board; check this table before relying on its card count.
+
+![[4. Management/Management.base#Attention needs correction]]
+
+## Review dates
+
+![[4. Management/Management.base#Review dates]]
+
+The Dataview views below remain available for comparison. Daily Record bullets continue to feed the LifeOS weekly view.
+
 ## Open decisions
 
 ```dataview
