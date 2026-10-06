@@ -1,6 +1,7 @@
 ---
 type: risk
 status: open
+attention: This week
 review_on: 2026-09-21
 ---
 

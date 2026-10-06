@@ -1,6 +1,7 @@
 ---
 type: systemic-problem
 status: observed
+attention: Watch
 review_on: 2026-09-25
 ---
 

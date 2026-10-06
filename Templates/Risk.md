@@ -1,6 +1,7 @@
 ---
 type: risk
 status: open
+attention: Watch
 review_on:
 ---
 

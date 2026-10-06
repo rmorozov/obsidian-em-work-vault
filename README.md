@@ -9,3 +9,5 @@ The real vault, actual daily/weekly notes, personal notes and `.obsidian` settin
 For side-by-side comparison with the complete upstream example, run `bash scripts/fetch_lifeos_example.sh`; it creates an ignored, pinned local checkout under `.reference/`.
 
 Try the [synthetic one-week demo](demo/README.md) to verify the native LifeOS view and management cockpit in a local Obsidian checkout.
+
+Obsidian 1.14+ adds a native Bases [attention board and review table](docs/bases.md) to `HOME.md`, alongside the existing Dataview views.

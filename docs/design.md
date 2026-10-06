@@ -21,3 +21,11 @@ The source vault's `0. PeriodicNotes/Templates/Daily.md` has `## Daily Record` a
 LifeOS implements `BulletRecordListByTime` using Dataview: it gathers non-task list items from daily files in the period and filters by the configured Daily Record heading. The view is rendered dynamically in Obsidian. It is the native collection mechanism; no independent Python collector is needed for v1.
 
 Inspect the locally installed LifeOS settings and date formats before migrating data or replacing a local template. Never overwrite existing LifeOS-created files during migration.
+
+## Native management views experiment
+
+Bases provides an editable attention board and review-date table over promoted management notes. LifeOS and Dataview retain Daily Record aggregation. A daily observation stays a bullet until human review promotes it; there is no new signal-note database.
+
+`attention` (Now / This week / Watch) describes when the manager should act; `status` describes lifecycle progress. Moving an attention card changes only `attention`. Existing lowercase `type` and `status` values, `needed_by` and `review_on` remain canonical. The views read the same frontmatter as Dataview, without duplicating note content or ADO execution data. Compare the interfaces during the demo before choosing the default.
+
+Migration should preview normalization of existing properties and install view definitions separately from content. Missing attention is visible as None; unsupported values can be found in the review table. No metadata is added to daily capture bullets.
