@@ -28,4 +28,4 @@ Bases provides an editable attention board and review-date table over promoted m
 
 `attention` (Now / This week / Watch) describes when the manager should act; `status` describes lifecycle progress. Moving an attention card changes only `attention`. Existing lowercase `type` and `status` values, `needed_by` and `review_on` remain canonical. The views read the same frontmatter as Dataview, without duplicating note content or ADO execution data. Compare the interfaces during the demo before choosing the default.
 
-Migration should preview normalization of existing properties and install view definitions separately from content. Missing attention is visible as None; unsupported values can be found in the review table. No metadata is added to daily capture bullets.
+Migration should preview normalization of existing properties and install view definitions separately from content. Missing attention is visible as None; missing and unsupported values are surfaced in an editable correction table immediately below the board. No metadata is added to daily capture bullets.

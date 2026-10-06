@@ -40,6 +40,19 @@ views:
       - note.review_on
       - note.needed_by
   - type: table
+    name: Attention needs correction
+    filters:
+      and:
+        - 'attention != "Now" && attention != "This week" && attention != "Watch"'
+    order:
+      - file.name
+      - note.attention
+      - note.type
+      - note.status
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
     name: Review dates
     order:
       - file.name

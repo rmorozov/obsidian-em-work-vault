@@ -8,6 +8,12 @@ Obsidian 1.14+: enable the core Bases plugin to review promoted notes below. Mov
 
 ![[4. Management/Management.base#Attention]]
 
+### Attention needs correction
+
+Missing or mistyped attention values appear here. Set each row to **Now**, **This week**, or **Watch**. Unsupported values are hidden from the board; check this table before relying on its card count.
+
+![[4. Management/Management.base#Attention needs correction]]
+
 ## Review dates
 
 ![[4. Management/Management.base#Review dates]]

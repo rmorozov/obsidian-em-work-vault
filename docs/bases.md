@@ -18,14 +18,15 @@ New management templates default to `Watch`; choose attention when promoting an 
 
 ## Views
 
-`4. Management/Management.base` contains two views, embedded in HOME:
+`4. Management/Management.base` contains three views, embedded in HOME:
 
 - **Attention:** cards grouped by editable `note.attention`, ordered Now / This week / Watch / None. Cards display the note name, type, status and dates. Moving a card changes `attention`, not `status` or the note's folder.
+- **Attention needs correction:** an editable table immediately below the board lists active notes whose attention is missing or differs from the three supported values. Correct the value in that table to return a hidden card to the board. With the initial fixtures it is empty.
 - **Review dates:** the same active notes, with editable `review_on` and `needed_by` columns. A read-only Next checkpoint formula uses `review_on` when present, otherwise `needed_by`, and sorts earliest first. It is a review checkpoint, not a replacement for the decision deadline, which remains separately visible. Notes with no date remain in the table.
 
 The shared filter includes only Markdown management notes under `4. Management`, and excludes `closed` and `resolved` items. Templates, raw daily notes and fixture originals under `demo/fixtures` are outside that folder and do not appear. The Dataview decision table still shows only `open` decisions; the attention view also retains later active stages such as `decided` and `communicated` until `closed`.
 
-Missing attention appears in None. The explicit column order hides unsupported attention values; the ungrouped Review dates table still shows these notes. Check that table for missing or mistyped values when adopting existing notes. Use the property spellings in the table above; do not introduce parallel `review` or `needed-by` fields.
+Missing attention appears in None and Attention needs correction. The explicit column order hides unsupported attention values; Attention needs correction surfaces these immediately below the board, and Review dates also retains them. Check the correction table before relying on the board when adopting or editing notes. Use the property spellings in the table above; do not introduce parallel `review` or `needed-by` fields.
 
 Create promoted notes with the existing templates in their management folders. The board's plus button supplies a grouping value, but does not guarantee our type, lifecycle fields or body template; avoid using it for this first experiment.
 
